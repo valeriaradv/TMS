@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Director extends Employee {
 
-    private List<Employee> employees = new ArrayList<>();
+    List<Employee> employees = new ArrayList<>();
 
     public Director() {
         position = Position.DIRECTOR;
@@ -34,7 +34,7 @@ public class Director extends Employee {
     @Override
     public String toString() {
         return "\nDirector: " +
-                "\n name: " + super.getFirstName() +" "+ super.getSecondName() +
+                "\n name: " + super.getFirstName() + " " + super.getSecondName() +
                 "\n salary: " + salary() +
                 "\n employees: " + getEmployees();
     }
